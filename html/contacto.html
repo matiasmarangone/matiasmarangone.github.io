@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="menuNavegacion">
+    <nav>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./alquilar.html">Alquil.Ar</a></li>
+            <li><a href="./servicios.html">Servicios</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+    <section>
+        <div class="container">
+            <form action="enviar.php">
+          
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido">
+          
+              <label for="pais">Pais</label>
+              <select id="pais" name="pais">
+                <option value="argentina">Argentina</option>
+                <option value="chile">Chile</option>
+                <option value="uruguay">Uruguay</option>
+              </select>
+          
+              <label for="consulta">Consulta</label>
+              <textarea id="consulta" name="consulta" placeholder="Escriba aqui su consulta" ></textarea>
+          
+              <input type="submit" value="Enviar">
+          
+            </form>
+          </div>
+    </section>
+    
+</body>
+</html>
