@@ -1,53 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es-AR">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Matias Marangone">
     <title>Contacto</title>
-    <link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+      }
+
+      @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+          }
+      }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="../css/carousel.css" rel="stylesheet">
 </head>
 <body>
-  <header class="menuNavegacion">
-    <nav>
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./alquilar.html">Alquil.Ar</a></li>
-            <li><a href="./servicios.html">Servicios</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">META</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./alquilar.html">Alquil.Ar</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
-    <section>
-        <div class="container">
-            <form action="enviar.php">
+
+
+    <main>
+
+
+
+      <!-- Marketing messaging and featurettes
+================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+      <div class="container marketing">
+
+          <!-- Three columns of text below the carousel -->
+          <div class="row row-first">
+              <div class="col-lg-2">
+
+              </div>
+              <div class="col-lg-8">
+
+
+                <form>
+                 
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Nombre</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu nombre">
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Apellido</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingresa tu apellido">
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Consulta</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ingresa tu consulta"></textarea>
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <br>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </div>
+                  
+                </form>
+
+              </div><!-- /.col-lg-8 -->
+
+              <div class="col-lg-2">
+
+              </div>
+          </div><!-- /.row -->
+
+
+          <!-- START THE FEATURETTES -->
+
+          <hr class="featurette-divider">
+
           
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
-                
-              <label for="apellido">Apellido</label>
-              <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido">
           
-              <label for="pais">Pais</label>
-              <select id="pais" name="pais">
-                <option value="argentina">Argentina</option>
-                <option value="chile">Chile</option>
-                <option value="uruguay">Uruguay</option>
-              </select>
-          
-              <label for="consulta">Consulta</label>
-              <textarea id="consulta" name="consulta" placeholder="Escriba aqui su consulta" ></textarea>
-          
-              <input type="submit" value="Enviar">
-          
-            </form>
-          </div>
-    </section>
-    
+        
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+          <p class="float-end"><a href="#">Ir arriba</a></p>
+          <p>&copy; 2022 META, Inc. &middot;</p>
+      </footer>
+  </main>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
