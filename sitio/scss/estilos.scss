@@ -41,7 +41,6 @@ $miPadding: 50px;
       top: 0;
       left: 0;
       min-width: 100%;
-      height: 32rem;
     }
   }
 
@@ -65,7 +64,7 @@ $miPadding: 50px;
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
+  //padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
@@ -131,8 +130,12 @@ body {
 
   .carousel-caption p {
     margin-bottom: 1.25rem;
-    font-size: 1.25rem;
+    font-size: 2.25rem;
     line-height: 1.4;
+  }
+
+  .carousel-caption span {
+    background-color: rgba(128, 128, 128, 0.603); 
   }
 
   .featurette-heading {
@@ -165,4 +168,20 @@ body {
 	@extend .boton;
 	background-color:gray;
 	color:black;
+}
+
+
+.avatar-img{
+  border-radius: 50%;
+}
+
+.empresas {
+  text-align: center;
+  img{
+    height: 120px;
+  }
+}
+
+.elementoCompania {
+  padding-bottom: 50px;
 }
