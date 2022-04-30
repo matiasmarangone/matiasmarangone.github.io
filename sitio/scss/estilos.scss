@@ -1,3 +1,12 @@
+
+//Uso de Import
+@import "navbar";
+
+
+//Uso de variables
+$miPadding: 50px;
+
+
 .carousel {
     margin-bottom: 4rem;
   }
@@ -13,7 +22,7 @@
   
   .carousel-item {
     height: 32rem;
-  
+    //Uso de Nesting
     > img {
       position: absolute;
       top: 0;
@@ -31,6 +40,7 @@
     text-align: center;
     background-color: gray;
     color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    //Uso de las variables definidas anteriormente 
+    padding-top: $miPadding;
+    padding-bottom: $miPadding;
   }
